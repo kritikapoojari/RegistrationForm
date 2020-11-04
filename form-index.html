@@ -12,50 +12,106 @@
     <div>
 
         <h1>Welcome to Registration Form !</h1>
-        <h4> Please fill your personal details below.</h4>
+        <h4> Please fill your details below.</h4>
 
         <form action=" " method="POST">
+            <fieldset>
+                <legend>Login Detials</legend>
+                <br>
+                <label for="email">Email Id:</label>
+                <input type="email" name="email" id="email" />
 
-            <label for="name"> Name:</label>
-            <input type="text" name="name" id="name" size="19" />
+                <br>
+                <br>
 
+                <label for="password">Password: </label>
+                <input type="text" name="password" id="password" />
+
+                <br>
+                <br>
+
+            </fieldset>
             <br>
-            <br>
+            <fieldset>
+                <legend>Personal Details</legend>
 
-            <label for="email">Email Id:</label>
-            <input type="text" name="email" id="email" size="19" />
+                <label for="name"> Name:</label>
+                <input type="text" name="name" id="name" />
 
-            <br>
-            <br>
+                <br>
+                <br>
 
-            <label for="password">Password: </label>
-            <input type="text" name="password" id="password" size="17" />
+                <label for="phone">Contact No:</label>
+                <input type="number" name="phone" id="phone" />
 
-            <br>
-            <br>
+                <br>
+                <br>
 
-            <label>Gender:
+                <label>Gender:
                 <input type="radio" name="gender" value="male" id="1">Male
                 <input type="radio" name="gender" value="female" id="2">Female
                 <input type="radio" name="genfer" value="others" id="3">Others
-            </label>
+                 </label>
 
-            <br>
-            <br>
+                <br>
+                <br>
 
-            <label for="phone">Contact No:</label>
-            <input type="number" name="phone" id="phone" size="10" />
+                <label>
+                    Birthday:<select name="bday"id="bday">
+                        <option selected>-- Select Date --</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </label>
+                <label>
+                    <select name="bdaym"id="bdaym">
+                        <option selected>-- Select Month --</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                    </select>
+                </label>
+                <label>
+                    <select name="bdayy"id="bdayy">
+                        <option selected>-- Select Year --</option>
+                        <option>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                    </select>
+                </label>
 
-            <br>
-            <br>
+                <br>
+                <br>
 
-            <label for="address">Address:</label>
-            <br>
-            <textarea name="adress" cols="35" rows="5" id="address"></textarea>
-            <br>
-            <br>
+                <label for="address">Address:</label>
+                <br>
+                <textarea name="adress" cols="35" rows="5" id="address"></textarea>
+                <br>
+                <br>
 
-            <label>
+                <label>
                 City: <select name="city" id="city">
                     <option selected>-- Select City --</option>
                     <option>Mumbai</option>
@@ -64,13 +120,12 @@
                     <option>Delhi</option>
                     <option>Banglore</option>
                 </select>
-            </label>
+                </label>
+                <br>
+                <br>
 
-            <br>
-            <br>
-
-            <label>
-                Course: <select name="course" id="course">
+                <label>
+                Degree: <select name="course" id="course">
                     <option selected>-- Select Course --</option>
                     <option>Engineering</option>
                     <option>B.Com</option>
@@ -80,21 +135,33 @@
                 </select>
             </label>
 
+            </fieldset>
             <br>
             <br>
-
-            <label>
-                Language:<input type="checkbox" name="checkbox" value="checkbox" id="1">English
-                <input type="checkbox" name="checkbox" value="checkbox" id="2">Hindi
-                <input type="checkbox" name="checkbox" value="checkbox" id="3">Marathi
+            <fieldset>
+                <legend>Area of Interests</legend>
+                <br>
+                <label>
+                    Languages known:<input type="checkbox" name="checkbox" value="checkbox" id="1">English
+                    <input type="checkbox" name="checkbox" value="checkbox" id="2">Hindi
+                    <input type="checkbox" name="checkbox" value="checkbox" id="3">Marathi
             </label>
+                <br>
+                <br>
+
+                <label>
+                Hobbies:<input type="checkbox" name="checkbox" value="checkbox" id="01">Singing
+                <input type="checkbox" name="checkbox" value="checkbox" id="02">Dancing
+                <input type="checkbox" name="checkbox" value="checkbox" id="03">Reading
+            </label>
+            </fieldset>
 
             <br>
-            <br>
-            <br>
+
 
             <label>
                 <input type="submit" name="submit" value="Submit">
+                <input type="reset" name="reset" value="Reset">
             </label>
 
             <br>
@@ -103,7 +170,6 @@
 
         </form>
     </div>
-
 </body>
 
 </html>
