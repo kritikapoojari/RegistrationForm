@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="form-index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-form">
+        <div class="container-class">
+
+            <h1>Registration Form</h1>
+            <h4> Please fill your details below.</h4>
+
+            <div class="logo">
+                <img src="">
+            </div>
+
+            <form action=" " method="POST" class="main-container">
+                <fieldset>
+                    <legend>Login Detials</legend>
+                    <br>
+                    <label for="email">Email Id:</label>
+                    <input type="email" name="email" id="email" />
+
+                    <br>
+                    <br>
+
+                    <label for="password">Password: </label>
+                    <input type="text" name="password" id="password" />
+
+                    <br>
+                    <br>
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <label for="name"> Name:</label>
+                    <input type="text" name="name" id="name" />
+
+                    <br>
+                    <br>
+
+                    <label for="phone">Contact No:</label>
+                    <input type="number" name="phone" id="phone" />
+
+                    <br>
+                    <br>
+
+                    <label>Gender:
+                <input type="radio" name="gender" value="male" id="1">Male
+                <input type="radio" name="gender" value="female" id="2">Female
+                <input type="radio" name="genfer" value="others" id="3">Others
+                 </label>
+
+                    <br>
+                    <br>
+
+                    <label>
+                    Birthday:<select name="bday"id="bday">
+                        <option selected>-- Select Date --</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </label>
+                    <label>
+                    <select name="bdaym"id="bdaym">
+                        <option selected>-- Select Month --</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                    </select>
+                </label>
+                    <label>
+                    <select name="bdayy"id="bdayy">
+                        <option selected>-- Select Year --</option>
+                        <option>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                    </select>
+                </label>
+
+                    <br>
+                    <br>
+
+                    <label for="address">Address:</label>
+                    <br>
+                    <textarea name="adress" cols="35" rows="5" id="address"></textarea>
+                    <br>
+                    <br>
+
+                    <label>
+                City: <select name="city" id="city">
+                    <option selected>-- Select City --</option>
+                    <option>Mumbai</option>
+                    <option>Chennai</option>
+                    <option>Kolkata</option>
+                    <option>Delhi</option>
+                    <option>Banglore</option>
+                </select>
+                </label>
+                    <br>
+                    <br>
+
+                    <label>
+                Degree: <select name="course" id="course">
+                    <option selected>-- Select Course --</option>
+                    <option>Engineering</option>
+                    <option>B.Com</option>
+                    <option>Pharamacy</option>
+                    <option>B.A</option>
+                    <option>Law</option>
+                </select>
+            </label>
+
+                </fieldset>
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Area of Interests</legend>
+                    <br>
+                    <label>
+                    Languages known:<input type="checkbox" name="checkbox" value="checkbox" id="1">English
+                    <input type="checkbox" name="checkbox" value="checkbox" id="2">Hindi
+                    <input type="checkbox" name="checkbox" value="checkbox" id="3">Marathi
+            </label>
+                    <br>
+                    <br>
+
+                    <label>
+                Hobbies:<input type="checkbox" name="checkbox" value="checkbox" id="01">Singing
+                <input type="checkbox" name="checkbox" value="checkbox" id="02">Dancing
+                <input type="checkbox" name="checkbox" value="checkbox" id="03">Reading
+            </label>
+                </fieldset>
+
+                <br>
+
+
+                <label>
+                <input type="submit" name="submit" value="Submit">
+                <input type="reset" name="reset" value="Reset">
+            </label>
+
+                <br>
+                <br>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
